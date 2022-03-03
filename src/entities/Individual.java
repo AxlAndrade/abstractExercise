@@ -21,8 +21,12 @@ public class Individual extends TaxPayer {
 		} else {
 			return (anualIncome*25.0/100) - (healthExpenditures*50.0/100);
 		}
-		
-		
+	}
+	@Override
+	public String toString() {
+		return super.toString()
+				+": $ "
+				+ tax();		
 	}
 
 }
